@@ -1,0 +1,6 @@
+<h2>Father</h2>
+<div class="father">
+  <app-son *ngFor="let advisef of advises" [advise]="advisef"
+            (markedMessage)="showMessages($event)"></app-son>
+            <h3 class="text-center">{{ text }}</h3>
+</div>

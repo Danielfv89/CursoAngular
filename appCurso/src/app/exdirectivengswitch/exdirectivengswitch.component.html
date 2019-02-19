@@ -1,0 +1,11 @@
+<ul *ngFor="let jugador of jugadores" [ngSwitch]="jugador.equipo">
+  <li *ngSwitchCase="'Palotes F.C.'" class="palotes">
+    <h4>{{ jugador.nombre }} | {{ jugador.equipo }} </h4>
+  </li>
+  <li *ngSwitchCase="'Zuntanitos C.D.'" class="zutanitos">
+      <h4>{{ jugador.nombre }} | {{ jugador.equipo }} </h4>
+    </li>
+    <li *ngSwitchCase="'RupertClub'" class="ruper">
+        <h4>{{ jugador.nombre }} | {{ jugador.equipo }} </h4>
+      </li>
+</ul>

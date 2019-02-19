@@ -1,0 +1,8 @@
+<h3>Son</h3>
+<div class="son">
+  <h4 [ngClass]="{tachado: readed == true}" style="display: inline">{{ advise }}</h4>
+  <button class="btn btn-success float-right" (click)="marcar(); detectar($event)" *ngIf="readed == false">
+    Marcar como leído</button>
+  <button class="btn btn-danger float-right" (click)="marcar()" *ngIf="readed == true">
+    Desmarcar como leído</button>
+</div>
