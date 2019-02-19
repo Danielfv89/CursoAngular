@@ -1,1 +1,17 @@
-<h2>{{ mensaje }}</h2>
+<h2>Listado</h2>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr class="filters">
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>tlf</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let proveedor of proveedores">
+      <td>{{proveedor.nombre}}</td>
+      <td><a href="mailto:{{proveedor.mail}}">{{proveedor.mail}}</a></td>
+      <td>{{proveedor.tlf}}</td>
+    </tr>
+  </tbody>
+</table>
